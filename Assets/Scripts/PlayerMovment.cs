@@ -10,11 +10,12 @@ public class PlayerMovment : MonoBehaviour
 
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float jumpForce = 6;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     
@@ -22,7 +23,7 @@ public class PlayerMovment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward *Time.deltaTime * playerSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
 
 
 
@@ -42,14 +43,21 @@ public class PlayerMovment : MonoBehaviour
         }
 
         //jump
-        if (Input.GetButtonDown("Jump"))
+        
+        
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            if (Physics.Raycast(transform.position, Vector3.down, 1.01f, LayerMask.GetMask("Ground")))
+            {
+                Jump();
+            }
+            
         }
     }
 
     private void Jump()
     {
+        
         rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
     }
 }

@@ -10,16 +10,21 @@ public class OOF : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(CollisionEnd());
+        if (other.CompareTag("Player"))
+        {
+            StartCoroutine(CollisionEnd());
+            Debug.Log(gameObject.name);
+        }
+        
     }
 
     IEnumerator CollisionEnd()
     {
         Player1.GetComponent<PlayerMovment>().enabled = false;
         CameraMain.GetComponent<Animator>().Play("Hit The wall Cam");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         Death.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(0);
     }
 }
