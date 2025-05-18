@@ -7,6 +7,10 @@ public class PlayerMovment : MonoBehaviour
     public float horizontalSpeed = 3;
     public float rightLimit = 6;
     public float leftLimit = -6;
+
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private float jumpForce = 6;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,5 +40,16 @@ public class PlayerMovment : MonoBehaviour
                 transform.Translate(Vector3.right * Time.deltaTime * playerSpeed);
             }
         }
+
+        //jump
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
+    }
+
+    private void Jump()
+    {
+        rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
     }
 }
