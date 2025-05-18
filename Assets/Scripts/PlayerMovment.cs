@@ -13,7 +13,7 @@ public class PlayerMovment : MonoBehaviour
 
     public bool canDoubleJump { get; set; }
     bool hasDoubleJump;
-    
+    private float doubleJumpTimer = 0f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -67,6 +67,13 @@ public class PlayerMovment : MonoBehaviour
             }
             
         }
+    }
+
+    public void ActivateDoubleJump(float duration)
+    {
+        canDoubleJump = true;
+        doubleJumpTimer = duration;
+        // You could add visual feedback here
     }
 
     private void Jump()

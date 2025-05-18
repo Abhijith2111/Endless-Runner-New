@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 2643078827710136992}
   - component: {fileID: 2404598280763115704}
   - component: {fileID: 2651884736851846373}
+  - component: {fileID: 6263084818383314324}
   m_Layer: 6
   m_Name: DoubleJump
   m_TagString: Untagged
@@ -275,12 +276,26 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6263084818383314324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4948687257281899880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b292e08efd6f90f4586a966f1f64c1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupDuration: 10
+  pickupEffect: {fileID: 0}
 --- !u!1001 &2911705222567070458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -442,9 +457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2dbed1a5231364a8a9a658590429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  CameraMain: {fileID: 0}
-  Death: {fileID: 0}
 --- !u!4 &3450545683319221521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc186f6b9b071ff4691e4de046060b15, type: 3}
@@ -547,9 +559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2dbed1a5231364a8a9a658590429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  CameraMain: {fileID: 0}
-  Death: {fileID: 0}
 --- !u!65 &409300449005047767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -681,9 +690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2dbed1a5231364a8a9a658590429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  CameraMain: {fileID: 0}
-  Death: {fileID: 0}
 --- !u!1001 &8833746739554984313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -768,9 +774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2dbed1a5231364a8a9a658590429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  CameraMain: {fileID: 0}
-  Death: {fileID: 0}
 --- !u!65 &4998376307124140548
 BoxCollider:
   m_ObjectHideFlags: 0
