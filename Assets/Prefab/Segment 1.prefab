@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b292e08efd6f90f4586a966f1f64c1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupDuration: 10
+  powerupDuration: 5
   pickupEffect: {fileID: 0}
 --- !u!1001 &2911705222567070458
 PrefabInstance:

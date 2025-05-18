@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
+    [SerializeField] private float initialSpeed = 1f;
+    [SerializeField] private float maxSpeed = 100f;
+    [SerializeField] private float speedIncreaseInterval = 10f; 
+    [SerializeField] private float speedIncrement = 1f;
 
     public float playerSpeed = 10;
     public float horizontalSpeed = 3;
     public float rightLimit = 6;
     public float leftLimit = -6;
+
+    private float currentSpeed;
+    private float timeSinceLastIncrease;
+    private bool isGameRunning = true;
 
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float jumpForce = 10;
@@ -19,6 +27,8 @@ public class PlayerMovment : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        currentSpeed = initialSpeed;
+        timeSinceLastIncrease = 0f;
     }
 
     
@@ -27,6 +37,16 @@ public class PlayerMovment : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
+
+        if (!isGameRunning) return;
+
+        timeSinceLastIncrease += Time.deltaTime;
+
+        if (timeSinceLastIncrease >= speedIncreaseInterval && currentSpeed < maxSpeed)
+        {
+            IncreaseSpeed();
+            timeSinceLastIncrease = 0f;
+        }
 
 
 
@@ -67,6 +87,19 @@ public class PlayerMovment : MonoBehaviour
             }
             
         }
+    }
+
+    private void IncreaseSpeed()
+    {
+        currentSpeed = Mathf.Min(currentSpeed + speedIncrement, maxSpeed);
+        Debug.Log($"Speed increased to: {currentSpeed}");
+
+        // You could add visual/audio feedback here
+    }
+
+    public void StopGame()
+    {
+        isGameRunning = false;
     }
 
     public void ActivateDoubleJump(float duration)
