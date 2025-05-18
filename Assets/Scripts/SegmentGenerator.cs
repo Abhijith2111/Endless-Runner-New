@@ -10,6 +10,10 @@ public class SegmentGenerator : MonoBehaviour
     [SerializeField] bool spawnSegment = false;
     [SerializeField] int segmentNum;
 
+    [SerializeField] GameObject Player1;
+    [SerializeField] GameObject CameraMain;
+    [SerializeField] GameObject Death;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Update()
@@ -27,6 +31,22 @@ public class SegmentGenerator : MonoBehaviour
         segmentNum = Random.Range(0, 3);
         Instantiate(segment[segmentNum], new Vector3(xPos, 0, 0), Quaternion.identity);
         xPos += -50;
+        var oofs = FindObjectsByType<OOF>(FindObjectsSortMode.None);
+        foreach (var o in oofs)
+        {
+            if (o.Player1 == null)
+            {
+                o.Player1 = Player1;
+            }
+            if (o.CameraMain == null)
+            {
+                o.CameraMain = CameraMain;
+            }
+            if (o.Death == null)
+            {
+                o.Death = Death;
+            }
+        }
         yield return new WaitForSeconds(3);
         spawnSegment = false;
 

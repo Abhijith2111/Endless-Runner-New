@@ -4,10 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class OOF : MonoBehaviour
 {
-    [SerializeField] GameObject Player1;
-    [SerializeField] GameObject CameraMain;
-    [SerializeField] GameObject Death;
-
+    public GameObject Player1 { get; set; }
+    public GameObject CameraMain { get; set; }
+    public GameObject Death { get; set; }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
