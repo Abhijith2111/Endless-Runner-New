@@ -74,4 +74,14 @@ public class PlayerMovment : MonoBehaviour
         
         rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            if (!GetComponent<PlayerInvincibility>().IsInvincible())
+            {
+                
+            }
+        }
+    }
 }

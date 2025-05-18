@@ -3096,6 +3096,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 54f7822c5e5a48b4da43b5e57b869c7b, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3124,9 +3128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2dbed1a5231364a8a9a658590429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  CameraMain: {fileID: 0}
-  Death: {fileID: 0}
 --- !u!65 &5394753252166900804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3225,6 +3226,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c589172c6856834e914ec2202ac9ceb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 1276779827138096988, guid: 8c589172c6856834e914ec2202ac9ceb, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3268,9 +3273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2dbed1a5231364a8a9a658590429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  CameraMain: {fileID: 0}
-  Death: {fileID: 0}
 --- !u!65 &4852043920758882600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3414,6 +3416,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c589172c6856834e914ec2202ac9ceb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 1276779827138096988, guid: 8c589172c6856834e914ec2202ac9ceb, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3457,9 +3463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2dbed1a5231364a8a9a658590429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 0}
-  CameraMain: {fileID: 0}
-  Death: {fileID: 0}
 --- !u!65 &1462066377810084872
 BoxCollider:
   m_ObjectHideFlags: 0
