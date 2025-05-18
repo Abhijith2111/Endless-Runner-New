@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class InvincibilityPickUp : MonoBehaviour
 {
-    [SerializeField] private float invincibilityDuration = 5f;
+    [SerializeField] private float invincibilityDuration = 10f;
     [SerializeField] private GameObject pickupEffect;
 
     private void OnTriggerEnter(Collider other)
