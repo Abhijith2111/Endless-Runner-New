@@ -9,9 +9,12 @@ public class PlayerMovment : MonoBehaviour
     public float leftLimit = -6;
 
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float jumpForce = 6;
-    
+    [SerializeField] private float jumpForce = 10;
 
+    public bool canDoubleJump { get; set; }
+    bool hasDoubleJump;
+    
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,11 +47,22 @@ public class PlayerMovment : MonoBehaviour
 
         //jump
         
-        
+        if(Physics.Raycast(transform.position, Vector3.down, 1.01f, LayerMask.GetMask("Ground")))
+        {
+            hasDoubleJump = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (Physics.Raycast(transform.position, Vector3.down, 1.01f, LayerMask.GetMask("Ground")))
             {
+               
+                Jump();
+            }
+
+            else if(canDoubleJump && !hasDoubleJump)
+            {
+                hasDoubleJump = true;
                 Jump();
             }
             
