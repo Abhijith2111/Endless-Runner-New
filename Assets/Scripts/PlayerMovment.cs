@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
-    [SerializeField] private float initialSpeed = 1f;
+    [SerializeField] private float initialSpeed = 5f;
     [SerializeField] private float maxSpeed = 100f;
-    [SerializeField] private float speedIncreaseInterval = 10f; 
+    [SerializeField] private float speedIncreaseInterval = 5f; 
     [SerializeField] private float speedIncrement = 1f;
 
-    public float playerSpeed = 10;
+    public float playerSpeed = 5;
     public float horizontalSpeed = 3;
     public float rightLimit = 6;
     public float leftLimit = -6;

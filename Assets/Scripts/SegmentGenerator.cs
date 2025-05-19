@@ -47,7 +47,7 @@ public class SegmentGenerator : MonoBehaviour
                 o.Death = Death;
             }
         }
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         spawnSegment = false;
 
     }

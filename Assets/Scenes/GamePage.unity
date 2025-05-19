@@ -410,13 +410,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.13052596, y: 0.0000008046626, z: -0.000000119209275, w: -0.99144495}
-  m_LocalPosition: {x: 0.1859995, y: 1.4269999, z: -3.589001}
+  m_LocalRotation: {x: -0.2358571, y: 0.00000083446486, z: -0.00000023096794, w: -0.9717878}
+  m_LocalPosition: {x: 0.2, y: 2.8, z: -3.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1550968626}
-  m_LocalEulerAnglesHint: {x: 15, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 27.284, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,6 +1137,7 @@ GameObject:
   - component: {fileID: 1550968627}
   - component: {fileID: 1550968628}
   - component: {fileID: 1550968629}
+  - component: {fileID: 1550968630}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1249,11 +1250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ddb60af1a642c479fed1b1988cb29b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSpeed: 5
+  initialSpeed: 10
   maxSpeed: 100
   speedIncreaseInterval: 10
   speedIncrement: 0.5
-  playerSpeed: 15
+  playerSpeed: 10
   horizontalSpeed: 3
   rightLimit: 6
   leftLimit: -6
@@ -1299,6 +1300,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invincibleMaterial: {fileID: 0}
+--- !u!114 &1550968630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550968622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a36046dcc2443d47a5f84c516505276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slowMoParticles: {fileID: 0}
+  slowMoSound: {fileID: 0}
 --- !u!1 &2048472204
 GameObject:
   m_ObjectHideFlags: 0
