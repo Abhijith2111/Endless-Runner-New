@@ -1,16 +1,27 @@
 using UnityEngine;
 
-public class LazerController : MonoBehaviour
+public class LaserController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float speed = 20f;
+    public float lifetime = 3f;
+
     void Start()
     {
-        
+        Destroy(gameObject, lifetime);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Instant kill player
+            other.GetComponent<PlayerMovement>().Die();
+            Destroy(gameObject);
+        }
     }
 }

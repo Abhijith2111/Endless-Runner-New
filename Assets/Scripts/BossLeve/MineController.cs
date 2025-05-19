@@ -2,15 +2,30 @@ using UnityEngine;
 
 public class MineController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float lifetime = 10f;
+    public ParticleSystem explosionEffect;
+
     void Start()
     {
-        
+        Destroy(gameObject, lifetime);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            // Instant kill player
+            other.GetComponent<PlayerMovement>().Die();
+            Explode();
+        }
+    }
+
+    void Explode()
+    {
+        if (explosionEffect != null)
+        {
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+        }
+        Destroy(gameObject);
     }
 }
