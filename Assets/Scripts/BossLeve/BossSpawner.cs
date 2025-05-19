@@ -6,17 +6,9 @@ public class BossSpawner : MonoBehaviour
     public Transform spawnPoint;
     private bool bossSpawned = false;
 
-    void Update()
+    void Start()
     {
-        if (!bossSpawned && Time.timeSinceLevelLoad >= 30f)
-        {
-            SpawnBoss();
-            bossSpawned = true;
-        }
-    }
-
-    void SpawnBoss()
-    {
+        
         Instantiate(bossPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 }

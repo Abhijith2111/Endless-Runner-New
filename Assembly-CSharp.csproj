@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Pickups\PickupSpawner.cs" />
     <Compile Include="Assets\Scripts\BossLeve\BossSpawner.cs" />
     <Compile Include="Assets\Scripts\BossLeve\LazerController.cs" />
+    <Compile Include="Assets\Scripts\Teleporter.cs" />
     <Compile Include="Assets\Scripts\CoinCollect.cs" />
     <Compile Include="Assets\Scripts\PlayerMovment.cs" />
     <Compile Include="Assets\Scripts\BossLeve\BossController.cs" />
