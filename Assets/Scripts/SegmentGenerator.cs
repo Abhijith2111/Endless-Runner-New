@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SegmentGenerator : MonoBehaviour
@@ -14,24 +15,20 @@ public class SegmentGenerator : MonoBehaviour
     [SerializeField] GameObject CameraMain;
     [SerializeField] GameObject Death;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Update()
-    {
-        if(spawnSegment == false)
-        {
-            spawnSegment = true;
-            StartCoroutine(SegmentGen());
-        }
-        
-    }
-
+    
     IEnumerator SegmentGen()
     {
         segmentNum = Random.Range(0, 3);
-        Instantiate(segment[segmentNum], new Vector3(xPos, 0, 0), Quaternion.identity);
+        GameObject newSegment = Instantiate(segment[segmentNum], new Vector3(xPos, 0, 0), Quaternion.identity);
         xPos += -50;
+        
+
+
         var oofs = FindObjectsByType<OOF>(FindObjectsSortMode.None);
+        
+
+        
+
         foreach (var o in oofs)
         {
             if (o.Player1 == null)
@@ -50,8 +47,19 @@ public class SegmentGenerator : MonoBehaviour
         yield return new WaitForSeconds(1);
         spawnSegment = false;
 
+        
     }
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Update()
+    {
+        if (spawnSegment == false)
+        {
+            spawnSegment = true;
+            StartCoroutine(SegmentGen());
 
+            
+        }
 
-
+    }
+    
 }
