@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class SegmentGenerator : MonoBehaviour
 {
     public GameObject[] segment;
-    public GameObject teleporterPrefab; // Add this public field for the teleporter prefab
+    public GameObject teleporterPrefab; 
 
     [SerializeField] int xPos = 50;
     [SerializeField] bool spawnSegment = false;
@@ -23,14 +23,12 @@ public class SegmentGenerator : MonoBehaviour
     {
         gameTime += Time.deltaTime;
 
-        // Segment generation logic
         if (spawnSegment == false)
         {
             spawnSegment = true;
             StartCoroutine(SegmentGen());
         }
 
-        // Spawn teleporter after 30 seconds
         if (gameTime >= 30f && !teleporterSpawned)
         {
             SpawnTeleporter();
@@ -40,7 +38,7 @@ public class SegmentGenerator : MonoBehaviour
 
     IEnumerator SegmentGen()
     {
-        segmentNum = Random.Range(0, segment.Length); // Changed to use segment.Length
+        segmentNum = Random.Range(0, 2); 
         GameObject newSegment = Instantiate(segment[segmentNum], new Vector3(xPos, 0, 0), Quaternion.identity);
         xPos += -50;
 
@@ -65,11 +63,9 @@ public class SegmentGenerator : MonoBehaviour
             return;
         }
 
-        // Spawn teleporter in front of the player
         Vector3 teleporterPos = Player1.transform.position + new Vector3(15f, 0f, 0f);
         currentTeleporter = Instantiate(teleporterPrefab, teleporterPos, Quaternion.identity);
 
-        // Ensure the teleporter has proper components
         var collider = currentTeleporter.GetComponent<Collider>();
         if (collider == null)
         {
@@ -77,17 +73,15 @@ public class SegmentGenerator : MonoBehaviour
             collider.isTrigger = true;
         }
 
-        // Add or get teleporter script
         var teleporter = currentTeleporter.GetComponent<Teleporter>();
         if (teleporter == null)
         {
             teleporter = currentTeleporter.AddComponent<Teleporter>();
         }
 
-        teleporter.targetScene = "BossFight"; // Make sure this matches your scene name exactly
+        teleporter.targetScene = "BossFight"; 
         teleporter.player = Player1;
 
-        // Optional: Add visual effects
         var particles = currentTeleporter.GetComponent<ParticleSystem>();
         if (particles != null) particles.Play();
     }

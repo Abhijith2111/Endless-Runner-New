@@ -10,8 +10,8 @@ public class BossController : MonoBehaviour
     public Transform[] laserSpawnPoints;
 
     private float bossTimer = 0f;
-    private float laserTimer = 0f;
-    private float mineTimer = 0f;
+    private float laserTimer = 2f;
+    private float mineTimer = 2f;
 
     void Start()
     {
