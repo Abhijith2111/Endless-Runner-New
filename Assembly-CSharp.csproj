@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\CoinRotate.cs" />
     <Compile Include="Assets\Scripts\Pickups\SlowMoPickup.cs" />
     <Compile Include="Assets\Scripts\Pickups\PickupSpawner.cs" />
+    <Compile Include="Assets\Scripts\BossLeve\BossSpawner.cs" />
     <Compile Include="Assets\Scripts\BossLeve\LazerController.cs" />
     <Compile Include="Assets\Scripts\CoinCollect.cs" />
     <Compile Include="Assets\Scripts\PlayerMovment.cs" />
