@@ -87,6 +87,11 @@ public class PlayerMovment : MonoBehaviour
             }
             
         }
+
+        float movement = playerSpeed * Time.deltaTime;
+
+
+        transform.Translate(Vector3.forward * movement);
     }
 
     private void IncreaseSpeed()

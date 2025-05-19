@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\DoubleJump.cs" />
     <Compile Include="Assets\Scripts\Pickups\DoubleJumpPickup.cs" />
     <Compile Include="Assets\Scripts\CoinRotate.cs" />
+    <Compile Include="Assets\Scripts\Pickups\SlowMoPickup.cs" />
     <Compile Include="Assets\Scripts\Pickups\PickupSpawner.cs" />
     <Compile Include="Assets\Scripts\CoinCollect.cs" />
     <Compile Include="Assets\Scripts\PlayerMovment.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\Scripts\MainMenuCode.cs" />
     <Compile Include="Assets\Scripts\Pickups\InvincibilityPickUp.cs" />
     <Compile Include="Assets\Scripts\Knowledge.cs" />
+    <Compile Include="Assets\Scripts\Pickups\TimeController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Pickups\PlayerInvincibility.cs" />
     <Compile Include="Assets\Timer.cs" />
