@@ -14,7 +14,7 @@ public class MineController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Instant kill player
+            
             other.GetComponent<PlayerMovement>().Die();
             Explode();
         }

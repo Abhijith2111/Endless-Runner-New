@@ -15,13 +15,13 @@ public class BossController : MonoBehaviour
 
     void Start()
     {
-        // Start boss behavior
+        
         StartCoroutine(BossBehavior());
     }
 
     IEnumerator BossBehavior()
     {
-        // Boss lives for 30 seconds
+        
         yield return new WaitForSeconds(30f);
         Destroy(gameObject);
     }

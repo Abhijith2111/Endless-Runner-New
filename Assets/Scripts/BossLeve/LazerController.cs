@@ -19,7 +19,7 @@ public class LaserController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Instant kill player
+            
             other.GetComponent<PlayerMovement>().Die();
             Destroy(gameObject);
         }
