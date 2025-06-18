@@ -14,18 +14,10 @@ public class MineController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            
-            other.GetComponent<PlayerMovement>().Die();
-            Explode();
-        }
-    }
 
-    void Explode()
-    {
-        if (explosionEffect != null)
-        {
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            other.GetComponent<PlayerMovmentOther>()?.Die();
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 }

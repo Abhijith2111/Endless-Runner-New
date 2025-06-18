@@ -8,6 +8,7 @@ TagManager:
   - Boss
   - Instakill
   - InstantKill
+  - Ground
   layers:
   - Default
   - TransparentFX

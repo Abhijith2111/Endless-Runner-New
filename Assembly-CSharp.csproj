@@ -80,9 +80,10 @@
     <Compile Include="Assets\Scripts\Pickups\TimeController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
+    <Compile Include="Assets\Scripts\BossLeve\PlatformManager.cs" />
+    <Compile Include="Assets\Scripts\BossLeve\PlayerMovmentOther.cs" />
     <Compile Include="Assets\Scripts\Pickups\PlayerInvincibility.cs" />
     <Compile Include="Assets\Scripts\BossLeve\MineController.cs" />
-    <Compile Include="Assets\Scripts\BossLeve\PlayerMovement.cs" />
     <Compile Include="Assets\Timer.cs" />
   </ItemGroup>
   <ItemGroup>

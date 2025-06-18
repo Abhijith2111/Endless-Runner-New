@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BossController : MonoBehaviour
 {
@@ -8,27 +9,21 @@ public class BossController : MonoBehaviour
     public float laserInterval = 2f;
     public float mineInterval = 3f;
     public Transform[] laserSpawnPoints;
+    public string nextSceneName;
 
-    private float bossTimer = 0f;
     private float laserTimer = 2f;
     private float mineTimer = 2f;
 
     void Start()
     {
-        
-        StartCoroutine(BossBehavior());
-    }
-
-    IEnumerator BossBehavior()
-    {
-        
-        yield return new WaitForSeconds(30f);
-        Destroy(gameObject);
+        float lifeTime = Random.Range(15f, 30f);
+        StartCoroutine(BossLifeCycle(lifeTime));
     }
 
     void Update()
     {
-        bossTimer += Time.deltaTime;
+        transform.Translate(Vector3.back * Time.deltaTime * 2f);
+
         laserTimer += Time.deltaTime;
         mineTimer += Time.deltaTime;
 
@@ -49,15 +44,21 @@ public class BossController : MonoBehaviour
 
     void ShootLasers()
     {
-        foreach (Transform spawnPoint in laserSpawnPoints)
-        {
-            Instantiate(laserPrefab, spawnPoint.position, spawnPoint.rotation);
-        }
+        int randomIndex = Random.Range(0, laserSpawnPoints.Length);
+        Instantiate(laserPrefab, laserSpawnPoints[randomIndex].position, Quaternion.identity);
     }
 
     void DropMine()
     {
-        Vector3 minePosition = transform.position + new Vector3(Random.Range(-5f, 5f), 0, 0);
-        Instantiate(minePrefab, minePosition, Quaternion.identity);
+        Vector3 position = transform.position + new Vector3(Random.Range(-5f, 5f), 0, 0);
+        Instantiate(minePrefab, position, Quaternion.identity);
+    }
+
+    IEnumerator BossLifeCycle(float lifeTime)
+    {
+
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(gameObject);
+        SceneManager.LoadScene(nextSceneName);
     }
 }
