@@ -14,7 +14,7 @@ public class SceneSwitcher : MonoBehaviour
 
     private void SwitchScene()
     {
-        SceneManager.LoadScene("BossFight");
+        SceneManager.LoadScene("BossLevel");
     }
 
 }

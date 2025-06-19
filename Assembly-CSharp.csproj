@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SegmentGenerator.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\DoubleJump.cs" />
     <Compile Include="Assets\Scripts\Pickups\DoubleJumpPickup.cs" />
     <Compile Include="Assets\Scripts\CoinRotate.cs" />
