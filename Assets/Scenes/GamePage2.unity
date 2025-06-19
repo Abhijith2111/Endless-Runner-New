@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 212362223}
   - component: {fileID: 212362222}
   - component: {fileID: 212362221}
-  - component: {fileID: 212362220}
   - component: {fileID: 212362227}
   - component: {fileID: 212362226}
   - component: {fileID: 212362225}
@@ -142,28 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &212362220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212362219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ddb60af1a642c479fed1b1988cb29b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialSpeed: 5
-  maxSpeed: 100
-  speedIncreaseInterval: 5
-  speedIncrement: 1
-  playerSpeed: 5
-  horizontalSpeed: 3
-  rightLimit: 6
-  leftLimit: -6
-  rb: {fileID: 212362227}
-  jumpForce: 10
 --- !u!136 &212362221
 CapsuleCollider:
   m_ObjectHideFlags: 0
