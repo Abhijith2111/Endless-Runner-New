@@ -10,4 +10,4 @@ public class PlayerMoveInBoss1 : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
     }
-}
+}// potato
