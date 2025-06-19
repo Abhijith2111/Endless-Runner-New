@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitcher : MonoBehaviour
+public class SceneSwitcher2 : MonoBehaviour
 {
     [SerializeField] private string sceneToLoad = "YourSceneName";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -14,7 +14,7 @@ public class SceneSwitcher : MonoBehaviour
 
     private void SwitchScene()
     {
-        SceneManager.LoadScene("BossFight");
+        SceneManager.LoadScene("Boss fight");
     }
 
 }

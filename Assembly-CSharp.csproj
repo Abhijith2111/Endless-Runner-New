@@ -62,28 +62,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SegmentGenerator.cs" />
+    <Compile Include="Assets\Scripts\BossLevel\OOFBoss.cs" />
     <Compile Include="Assets\Scripts\DoubleJump.cs" />
     <Compile Include="Assets\Scripts\Pickups\DoubleJumpPickup.cs" />
+    <Compile Include="Assets\Scripts\BossLevel\TeleporterBoss.cs" />
     <Compile Include="Assets\Scripts\CoinRotate.cs" />
     <Compile Include="Assets\Scripts\Pickups\SlowMoPickup.cs" />
     <Compile Include="Assets\Scripts\Pickups\PickupSpawner.cs" />
-    <Compile Include="Assets\Scripts\BossLeve\BossSpawner.cs" />
-    <Compile Include="Assets\Scripts\BossLeve\LazerController.cs" />
     <Compile Include="Assets\Scripts\Teleporter.cs" />
     <Compile Include="Assets\Scripts\CoinCollect.cs" />
     <Compile Include="Assets\Scripts\PlayerMovment.cs" />
-    <Compile Include="Assets\Scripts\BossLeve\BossController.cs" />
+    <Compile Include="Assets\Scripts\BossLevel\SegmentGeneratorBossPlatform.cs" />
+    <Compile Include="Assets\Scripts\BossLevel\PlayerMovmentBossArea.cs" />
     <Compile Include="Assets\Scripts\OOF.cs" />
     <Compile Include="Assets\Scripts\MainMenuCode.cs" />
+    <Compile Include="Assets\Scripts\BossLevel\SceneSwitcher2.cs" />
     <Compile Include="Assets\Scripts\Pickups\InvincibilityPickUp.cs" />
     <Compile Include="Assets\Scripts\Knowledge.cs" />
     <Compile Include="Assets\Scripts\Pickups\TimeController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
-    <Compile Include="Assets\Scripts\BossLeve\PlatformManager.cs" />
-    <Compile Include="Assets\Scripts\BossLeve\PlayerMovmentOther.cs" />
     <Compile Include="Assets\Scripts\Pickups\PlayerInvincibility.cs" />
-    <Compile Include="Assets\Scripts\BossLeve\MineController.cs" />
     <Compile Include="Assets\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
