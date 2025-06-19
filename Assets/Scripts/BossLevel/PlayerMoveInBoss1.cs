@@ -4,6 +4,8 @@ public class PlayerMoveInBoss1 : MonoBehaviour
 {
     public float playerSpeed = 2;
     public float horizontalSpeed = 3;
+    public float rightLimit = 5.5f;
+    public float leftLimit = -5.5f;
 
     // Update is called once per frame
     void Update()
@@ -12,11 +14,17 @@ public class PlayerMoveInBoss1 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * horizontalSpeed);
+            if (this.gameObject.transform.position.z > leftLimit)
+            {
+                transform.Translate(Vector3.left * Time.deltaTime * horizontalSpeed);
+            }
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * horizontalSpeed);
+            if (this.gameObject.transform.position.z < rightLimit)
+            {
+                transform.Translate(Vector3.right * Time.deltaTime * horizontalSpeed);
+            }
         }
     }
-}// potato
+}
