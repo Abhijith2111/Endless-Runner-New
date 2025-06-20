@@ -10,21 +10,6 @@ public class PlayerMoveInBoss1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            if (this.gameObject.transform.position.z > leftLimit)
-            {
-                transform.Translate(Vector3.left * Time.deltaTime * horizontalSpeed);
-            }
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            if (this.gameObject.transform.position.z < rightLimit)
-            {
-                transform.Translate(Vector3.right * Time.deltaTime * horizontalSpeed);
-            }
-        }
+        transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed, Space.World);
     }
 }
