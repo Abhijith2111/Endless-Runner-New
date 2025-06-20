@@ -3,32 +3,29 @@ using UnityEngine;
 
 public class SegmentGeneratorLevel2 : MonoBehaviour
 {
-    public GameObject segmentMap01;
-    public GameObject segmentMap02;
-    public GameObject segmentMap03;
-    public GameObject segmentMap04;
-    public GameObject segmentMap05;
-    public GameObject segmentMap06;
-    public GameObject segmentMap07;
+    public GameObject[] segment;
+
+    [SerializeField] int zPos = 50;
+    [SerializeField] bool creatingSegment = false;
+    [SerializeField] int segmentNum;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Update()
     {
-        StartCoroutine(SegmentGen2());
+        if (creatingSegment == false)
+        {
+            creatingSegment = true;
+            StartCoroutine(SegmentGen2());
+        }
     }
     IEnumerator SegmentGen2()
     {
+        segmentNum = Random.Range(0, 8);
+        Instantiate(segment[segmentNum], new Vector3(0, 0, zPos), Quaternion.identity);
+        zPos += 50;
         yield return new WaitForSeconds(3);
-        segmentMap02.SetActive(true);
-        yield return new WaitForSeconds(3);
-        segmentMap03.SetActive(true);
-        yield return new WaitForSeconds(3);
-        segmentMap04.SetActive(true);
-        yield return new WaitForSeconds(3);
-        segmentMap05.SetActive(true);
-        yield return new WaitForSeconds(3);
-        segmentMap06.SetActive(true);
-        yield return new WaitForSeconds(3);
-        segmentMap07.SetActive(true);
+        creatingSegment = false;
+
     }
 
 }
