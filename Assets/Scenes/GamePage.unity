@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd12564f11857941a7b16402785bfd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: YourSceneName
+  sceneToLoad: BossFight
 --- !u!1 &1297014504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,8 +1756,8 @@ MonoBehaviour:
   speedIncrement: 0.5
   playerSpeed: 10
   horizontalSpeed: 3
-  rightLimit: 6
-  leftLimit: -6
+  rightLimit: 7
+  leftLimit: -7
   rb: {fileID: 1550968628}
   jumpForce: 10
 --- !u!54 &1550968628
