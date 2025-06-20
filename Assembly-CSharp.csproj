@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Level1\DoubleJump.cs" />
     <Compile Include="Assets\Scripts\Level1\OOF.cs" />
     <Compile Include="Assets\Scripts\Level1\CoinRotate.cs" />
+    <Compile Include="Assets\Scripts\Level2\SegmentGeneratorLevel2.cs" />
     <Compile Include="Assets\Scripts\Pickups\InvincibilityPickUp.cs" />
     <Compile Include="Assets\Scripts\Level1\MainMenuCode.cs" />
     <Compile Include="Assets\Scripts\Pickups\TimeController.cs" />
