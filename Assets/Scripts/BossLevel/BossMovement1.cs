@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BossMovement1 : MonoBehaviour
 {
-    public float bossSpeed = 2;
+    public float bossSpeed = 5;
 
 
     // Update is called once per frame

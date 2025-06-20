@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-    [SerializeField] private string sceneToLoad = "YourSceneName";
+    [SerializeField] private string sceneToLoad = "BossFight";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,7 +14,7 @@ public class SceneSwitcher : MonoBehaviour
 
     private void SwitchScene()
     {
-        SceneManager.LoadScene("BossLevel");
+        SceneManager.LoadScene("BossFight");
     }
 
 }
