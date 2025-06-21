@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\BossLevel\OOFBoss2.cs" />
     <Compile Include="Assets\Scripts\Pickups\DoubleJumpPickup.cs" />
     <Compile Include="Assets\Scripts\BossLevel\SegmentGeneratorBoss1.cs" />
     <Compile Include="Assets\Scripts\BossLevel\BossMovement1.cs" />
