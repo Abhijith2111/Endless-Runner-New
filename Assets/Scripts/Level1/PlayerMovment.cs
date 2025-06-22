@@ -4,7 +4,7 @@ public class PlayerMovment : MonoBehaviour
 {
     [SerializeField] private float initialSpeed = 5f;
     [SerializeField] private float maxSpeed = 100f;
-    [SerializeField] private float speedIncreaseInterval = 5f; 
+    [SerializeField] private float speedIncreaseInterval = 5f;
     [SerializeField] private float speedIncrement = 1f;
 
     public float playerSpeed = 5;
@@ -20,10 +20,8 @@ public class PlayerMovment : MonoBehaviour
     [SerializeField] private float jumpForce = 10;
 
     public bool canDoubleJump { get; set; }
-    bool hasDoubleJump;
-    private float doubleJumpTimer = 0f;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool hasDoubleJump;
+    private float doubleJumpTimer = 0f; 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -31,9 +29,6 @@ public class PlayerMovment : MonoBehaviour
         timeSinceLastIncrease = 0f;
     }
 
-    
-
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
@@ -48,26 +43,34 @@ public class PlayerMovment : MonoBehaviour
             timeSinceLastIncrease = 0f;
         }
 
-
+        if (canDoubleJump)
+        {
+            doubleJumpTimer -= Time.deltaTime;
+            if (doubleJumpTimer <= 0f)
+            {
+                canDoubleJump = false;
+                hasDoubleJump = false; 
+                Debug.Log("Double jump expired.");
+            }
+        }
 
         if (Input.GetKey(KeyCode.A))
         {
-            if (this.gameObject.transform.position.z > leftLimit)
+            if (transform.position.z > leftLimit)
             {
                 transform.Translate(Vector3.left * Time.deltaTime * playerSpeed);
             }
         }
         if (Input.GetKey(KeyCode.D))
         {
-            if (this.gameObject.transform.position.z < rightLimit)
+            if (transform.position.z < rightLimit)
             {
                 transform.Translate(Vector3.right * Time.deltaTime * playerSpeed);
             }
         }
 
-        //jump
         
-        if(Physics.Raycast(transform.position, Vector3.down, 1.01f, LayerMask.GetMask("Ground")))
+        if (Physics.Raycast(transform.position, Vector3.down, 1.01f, LayerMask.GetMask("Ground")))
         {
             hasDoubleJump = false;
         }
@@ -76,21 +79,16 @@ public class PlayerMovment : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, Vector3.down, 1.01f, LayerMask.GetMask("Ground")))
             {
-               
                 Jump();
             }
-
-            else if(canDoubleJump && !hasDoubleJump)
+            else if (canDoubleJump && !hasDoubleJump)
             {
                 hasDoubleJump = true;
                 Jump();
             }
-            
         }
 
         float movement = playerSpeed * Time.deltaTime;
-
-
         transform.Translate(Vector3.forward * movement);
     }
 
@@ -98,8 +96,6 @@ public class PlayerMovment : MonoBehaviour
     {
         currentSpeed = Mathf.Min(currentSpeed + speedIncrement, maxSpeed);
         Debug.Log($"Speed increased to: {currentSpeed}");
-
-        // You could add visual/audio feedback here
     }
 
     public void StopGame()
@@ -110,15 +106,16 @@ public class PlayerMovment : MonoBehaviour
     public void ActivateDoubleJump(float duration)
     {
         canDoubleJump = true;
+        hasDoubleJump = false; 
         doubleJumpTimer = duration;
-        // You could add visual feedback here
+        Debug.Log("Double jump activated!");
     }
 
     private void Jump()
     {
-        
         rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
