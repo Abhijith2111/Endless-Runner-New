@@ -821,6 +821,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &234398699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -950,6 +952,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &285501643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1275,6 +1279,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &376623334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1867,6 +1873,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &532351716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2119,6 +2127,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &589007877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2300,6 +2310,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &678022701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3047,6 +3059,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &859290502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3171,6 +3185,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &893212962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3625,6 +3641,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1142947133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3857,6 +3875,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1156237455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3991,6 +4011,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1188710061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4323,6 +4345,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1276873610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4801,6 +4825,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1330061143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4925,6 +4951,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1335783594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5082,6 +5110,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1351691045
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5231,7 +5261,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1fbdf05d5f74b994686325fe01fe58a6, type: 3}
   m_Resource: {fileID: 8300000, guid: 1fbdf05d5f74b994686325fe01fe58a6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -5438,6 +5468,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1504409593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5662,6 +5694,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1654594817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5786,6 +5820,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1665522563
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6136,6 +6172,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1700795706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6284,6 +6322,7 @@ GameObject:
   - component: {fileID: 1769007854}
   - component: {fileID: 1769007853}
   - component: {fileID: 1769007856}
+  - component: {fileID: 1769007857}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6409,6 +6448,28 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!95 &1769007857
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769007852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e7ca88858ef8f14c8bd7c3715dfd64d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1820451348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1786039822897084104, guid: 72bb6b82bf1ea1d43ba997409ceddaa1, type: 3}
@@ -6539,6 +6600,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1847940610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6827,6 +6890,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &1951646898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7343,6 +7408,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!1001 &2076219804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7450,6 +7517,8 @@ MonoBehaviour:
   Player: {fileID: 2012850792}
   playerAnimation: {fileID: 683534772}
   collisionFX: {fileID: 1438350830}
+  mainCamera: {fileID: 1769007852}
+  fadeOut: {fileID: 1287609757}
 --- !u!65 &2084194277
 BoxCollider:
   m_ObjectHideFlags: 0
