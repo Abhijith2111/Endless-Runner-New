@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\BossLevel\OOFBoss2.cs" />
     <Compile Include="Assets\Scripts\Pickups\DoubleJumpPickup.cs" />
     <Compile Include="Assets\Scripts\BossLevel\SegmentGeneratorBoss1.cs" />
+    <Compile Include="Assets\Scripts\Level1\ScoreCollect.cs" />
     <Compile Include="Assets\Scripts\BossLevel\BossMovement1.cs" />
     <Compile Include="Assets\Scripts\Pickups\SlowMoPickup.cs" />
     <Compile Include="Assets\Scripts\Level2\PlayerMovement2.cs" />

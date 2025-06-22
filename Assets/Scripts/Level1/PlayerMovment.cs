@@ -21,7 +21,7 @@ public class PlayerMovment : MonoBehaviour
 
     public bool canDoubleJump { get; set; }
     private bool hasDoubleJump;
-    private float doubleJumpTimer = 0f; 
+    private float doubleJumpTimer = 0f;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -49,7 +49,7 @@ public class PlayerMovment : MonoBehaviour
             if (doubleJumpTimer <= 0f)
             {
                 canDoubleJump = false;
-                hasDoubleJump = false; 
+                hasDoubleJump = false;
                 Debug.Log("Double jump expired.");
             }
         }
@@ -69,7 +69,7 @@ public class PlayerMovment : MonoBehaviour
             }
         }
 
-        
+
         if (Physics.Raycast(transform.position, Vector3.down, 1.01f, LayerMask.GetMask("Ground")))
         {
             hasDoubleJump = false;
@@ -106,7 +106,7 @@ public class PlayerMovment : MonoBehaviour
     public void ActivateDoubleJump(float duration)
     {
         canDoubleJump = true;
-        hasDoubleJump = false; 
+        hasDoubleJump = false;
         doubleJumpTimer = duration;
         Debug.Log("Double jump activated!");
     }
@@ -122,7 +122,7 @@ public class PlayerMovment : MonoBehaviour
         {
             if (!GetComponent<PlayerInvincibility>().IsInvincible())
             {
-                
+
             }
         }
     }
