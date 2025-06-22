@@ -9265,7 +9265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c4488f0f444f54088c134c942ac359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossSpeed: 7
+  bossSpeed: 15
 --- !u!1001 &1838027204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10522,8 +10522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47103ff4f0d45041a5fc60d43342581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 7
-  horizontalSpeed: 3
+  playerSpeed: 15
+  horizontalSpeed: 15
   rightLimit: 7
   leftLimit: -7
 --- !u!54 &2012850798
