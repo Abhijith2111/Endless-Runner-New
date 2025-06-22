@@ -35,13 +35,13 @@ public class SegmentGeneratorLevel2 : MonoBehaviour
             StartCoroutine(DeleteSegmentsOneByOne());
         }
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         creatingSegment = false;
     }
 
     IEnumerator DeleteSegmentsOneByOne()
     {
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(12f);
 
         while (true)
         {
@@ -51,7 +51,7 @@ public class SegmentGeneratorLevel2 : MonoBehaviour
                 Destroy(oldest);
             }
 
-            yield return new WaitForSeconds(15f);
+            yield return new WaitForSeconds(12f);
         }
     }
 

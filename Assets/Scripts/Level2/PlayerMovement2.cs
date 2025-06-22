@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement2 : MonoBehaviour
 {
-    public float playerSpeed = 7;
-    public float horizontalSpeed = 3;
+    public float playerSpeed = 15;
+    public float horizontalSpeed = 15;
     public float rightLimit = 7f;
     public float leftLimit = -7f;
 

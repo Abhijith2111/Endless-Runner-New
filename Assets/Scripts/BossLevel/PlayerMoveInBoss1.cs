@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerMoveInBoss1 : MonoBehaviour
 {
-    public float playerSpeed = 7;
-    public float horizontalSpeed = 7;
+    public float playerSpeed = 15;
+    public float horizontalSpeed = 15;
     public float rightLimit = 7f;
     public float leftLimit = -7f;
 
