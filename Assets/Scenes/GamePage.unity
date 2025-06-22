@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 163080893}
   - component: {fileID: 163080892}
   - component: {fileID: 163080894}
+  - component: {fileID: 163080895}
   m_Layer: 0
   m_Name: LevelControls
   m_TagString: Untagged
@@ -190,6 +191,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinDisplay: {fileID: 1297014504}
   scoreDisplay: {fileID: 0}
+--- !u!114 &163080895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163080891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd12564f11857941a7b16402785bfd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &189237317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,7 +1191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd12564f11857941a7b16402785bfd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: BossFight
 --- !u!1 &1297014504
 GameObject:
   m_ObjectHideFlags: 0
