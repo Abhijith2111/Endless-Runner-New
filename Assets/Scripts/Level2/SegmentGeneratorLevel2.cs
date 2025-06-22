@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SegmentGeneratorLevel2 : MonoBehaviour
@@ -9,23 +10,49 @@ public class SegmentGeneratorLevel2 : MonoBehaviour
     [SerializeField] bool creatingSegment = false;
     [SerializeField] int segmentNum;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Queue<GameObject> segmentQueue = new Queue<GameObject>();
+    private bool deletingStarted = false;
+
     void Update()
     {
-        if (creatingSegment == false)
+        if (!creatingSegment)
         {
             creatingSegment = true;
-            StartCoroutine(SegmentGen2());
+            StartCoroutine(SegmentGen());
         }
     }
-    IEnumerator SegmentGen2()
-    {
-        segmentNum = Random.Range(0, 8);
-        Instantiate(segment[segmentNum], new Vector3(0, 0, zPos), Quaternion.identity);
-        zPos += 50;
-        yield return new WaitForSeconds(3);
-        creatingSegment = false;
 
+    IEnumerator SegmentGen()
+    {
+        segmentNum = Random.Range(0, segment.Length);
+        GameObject newSegment = Instantiate(segment[segmentNum], new Vector3(0, 0, zPos), Quaternion.identity);
+        segmentQueue.Enqueue(newSegment);
+        zPos += 50;
+
+        if (!deletingStarted)
+        {
+            deletingStarted = true;
+            StartCoroutine(DeleteSegmentsOneByOne());
+        }
+
+        yield return new WaitForSeconds(5f);
+        creatingSegment = false;
+    }
+
+    IEnumerator DeleteSegmentsOneByOne()
+    {
+        yield return new WaitForSeconds(15f);
+
+        while (true)
+        {
+            if (segmentQueue.Count > 0)
+            {
+                GameObject oldest = segmentQueue.Dequeue();
+                Destroy(oldest);
+            }
+
+            yield return new WaitForSeconds(15f);
+        }
     }
 
 }
