@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "391848445845",
+    "project_id": "gage-poe-final",
+    "storage_bucket": "gage-poe-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391848445845:android:8b02845df4896bb28a989c",
+        "android_client_info": {
+          "package_name": "com.Gade.poe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt3deIZaXytKbWKQmqDEOyhtbCBJuGlhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
