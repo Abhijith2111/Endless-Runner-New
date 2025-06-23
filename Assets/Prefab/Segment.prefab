@@ -3287,6 +3287,8 @@ Transform:
   - {fileID: 8340098805592249964}
   - {fileID: 8721342623172597314}
   - {fileID: 5940067841898794131}
+  - {fileID: 2037035663063343434}
+  - {fileID: 1122727625976466077}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5848227224056449472
@@ -3724,6 +3726,146 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinSound: {fileID: 6263518931183886452}
+--- !u!1001 &584909050473688438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2722099392231776464}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1702.651
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70685863
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7073459
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0006617042
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0035097762
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.768
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 99.539
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 260.123
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_Name
+      value: RockyBg(Veiny) (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+--- !u!4 &1122727625976466077 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+  m_PrefabInstance: {fileID: 584909050473688438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2004023055571748513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2722099392231776464}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1652.7383
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 31.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -53
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00080669636
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0036577093
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7073366
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.70686704
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.768
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 99.534
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 80.827
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+      propertyPath: m_Name
+      value: RockyBg(Veiny)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+--- !u!4 &2037035663063343434 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 909eafcee1bd2694ea7a6ced89a3075f, type: 3}
+  m_PrefabInstance: {fileID: 2004023055571748513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2105930832168205242
 PrefabInstance:
   m_ObjectHideFlags: 0
