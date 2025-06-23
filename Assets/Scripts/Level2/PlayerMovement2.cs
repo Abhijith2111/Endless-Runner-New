@@ -4,7 +4,7 @@ public class PlayerMovement2 : MonoBehaviour
 {
     public float playerSpeed = 15;
     public float horizontalSpeed = 15;
-    public float rightLimit = 7f;
+    public float rightLimit = 12f;
     public float leftLimit = -7f;
 
     // Update is called once per frame
